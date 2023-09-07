@@ -65,8 +65,7 @@ done; }
   socketbasename=${socketbasename/#[^A-Za-z_]/_}
   socketsetuppath=$socketspath/${socketbasename/#[^A-Za-z_]/_}_setup.sock
   socketpath=$socketspath/${socketbasename/#[^A-Za-z_]/_}.sock
-  unitname=${ITEMNAME//'@'/'\x64'}
-  unitname=${ITEMNAME//'*'/_}
+  unitname=$(systemd-escape "$ITEMNAME")
   unitname="socket-credential-cache@$unitname.service"
 
   if [[ ${#socketsetuppath} -gt 108 ]]; then
