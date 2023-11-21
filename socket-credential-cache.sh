@@ -2,9 +2,7 @@
 
 socket_credential_cache() {
   set -e
-  local pkgroot
-  pkgroot=$(upkg root "${BASH_SOURCE[0]}")
-  # shellcheck source=.upkg/orbit-online/records.sh/records.sh
+  local pkgroot; pkgroot=$(upkg root "${BASH_SOURCE[0]}")
   source "$pkgroot/.upkg/orbit-online/records.sh/records.sh"
   PATH="$pkgroot/.upkg/.bin:$PATH"
 
