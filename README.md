@@ -7,6 +7,6 @@ for instructions) and then symlink the systemd unit from your user systemd dir:
 
 ```
 upkg install orbit-online/socket-credential-cache@<VERSION>
-ln -s ../../../.local/lib/upkg/orbit-online/socket-credential-cache/socket-credential-cache@.service $HOME/.config/systemd/user/socket-credential-cache@.service
+ln -s ../../../.local/lib/upkg/.upkg/socket-credential-cache/socket-credential-cache@.service $HOME/.config/systemd/user/socket-credential-cache@.service
 systemctl --user daemon-reload
 ```
