@@ -12,10 +12,6 @@
     {
       "tar": "https://github.com/andsens/docopt.sh/releases/download/v2.0.1/docopt-lib.sh.tar.gz",
       "sha256": "539053da8b3063921b8889dbe752279e3a215d8fa3e2550d6521e094981f26a2"
-    },
-    {
-      "tar": "https://github.com/orbit-online/path-tools/releases/download/v1.0.0/path-tools.tar.gz",
-      "sha256": "2ae2a98714aa81e2142b749dac9ecdb61e050e66bf8bd33aef0fccb2ce66c84b"
     }
   ]
 }
